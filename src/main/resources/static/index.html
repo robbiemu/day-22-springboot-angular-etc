@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="style/app.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+	<script src="js/app.js"></script>
+
+	<title>Springboot, with entity management and beginning angular</title>	
+</head>
+
+<body>
+<header><div id="navbar" class="fake">CSI</div></header>
+<section id="content">
+	<section id="poster">
+		<div class="poster">
+			<p class="title">Springboot, with entity management and beginning angular</p>
+		</div>
+	</section>
+	<section id="data" ng-controller="ExampleController">
+	<h4 class="title">Example angular</h4>
+		<ul ng-repeat="user in users" class="record">
+			<li>{{user.name}}</li>
+			<li>{{user.city}}</li>
+			<li>{{user.state}}</li>
+		</ul>
+	</section>
+	<section id="data" ng-controller="SecondController">
+		<ul ng-repeat="user in users" class="record">
+			<li>{{user.name}}</li>
+			<li>{{user.city}}</li>
+			<li>{{user.state}}</li>
+		</ul>
+	</section>
+	<section id="notes">
+	<p>
+	angular made of 3 parts:
+	<ul><li><span class="highlighted element">controller</span> - the <a href="https://docs.angularjs.org/guide/controller">controller</a> provides data to the page</li>
+	<li><span class="highlighted element">service</span> - the <a href="https://docs.angularjs.org/guide/services">service</a> adjoins to controllers, utilizing angular's dependency injection to chain together functions for use in the page.</li>
+	<li><span class="highlighted element">directive</span> - the <a href="https://docs.angularjs.org/guide/directive">directive</a> attaches a behavior to an element </li></ul>
+	</p>
+	<p><code>$scope</code> is a special object, looked for with reflection, and assigned to each <code>controller</code> (<code>service</code>'s and <code>directive</code>'s can look at <code>$scope </code> too but it is not part of the page to be controlled, and so they don't have a special scope for themselves).</p>
+	<p></p>
+	</section>
+</section>
+</body>
+
+</html>

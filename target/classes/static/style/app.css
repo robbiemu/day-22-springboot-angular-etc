@@ -1,0 +1,94 @@
+:root {
+	--lapiz-lazuli: hsla(198, 63%, 38%, 1); /* medium-light blue */
+	--green-sheen: hsla(170, 40%, 60%, 1); /* sea green pastel */
+	--sea-foam-green: hsla(139, 36%, 78%, 1); /* light sea green */
+	--very-pale-yellow: hsla(71, 100%, 87%, 1); /* yellow-taupe */
+	--awesome: hsla(344, 100%, 54%, 1);	/* pink */
+	--text-tint: hsla(344, 100%, 10%, 1);	/* dark */
+	--green-shade: hsla(170, 40%, 30%, 1); 
+
+	color: var(--text-tint);
+	font-size: 16pt;
+	font-family: Roboto, Helvetica, Calibri, "Open Sans", sans-serif;
+}
+
+body {
+	margin: 0;
+	background-color: var(--very-pale-yellow);
+}
+
+section#content {
+	margin: 8pt;
+}
+
+h4 {
+	color: var(--awesome);
+	margin-bottom: 1rem;
+}
+
+a {
+	color: var(--lapiz-lazuli);
+	font-weight: 900;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+.poster {
+	margin: 0 auto;
+	max-width: 50vw; 
+	padding: 1em 3em; 
+	background-color: var(--sea-foam-green);
+	border: solid 0.1em var(--green-sheen); 
+	border-radius: 50%;	
+	box-shadow: 0 0 5pt var(--green-sheen);
+	
+		color: var(--green-shade);
+}
+
+.poster > p {
+    padding-left: 2em;
+}
+
+.title {
+	font-size: 1.44em; 
+	font-family: Georgia, "Palentino Linotype", serif;
+	font-style: italic;
+	font-weight: 900;
+	 text-transform: lowercase;
+    letter-spacing: -2px;
+}
+
+#notes, #poster{
+		margin: 1em 0;
+}
+
+.record {
+	margin: 0;
+	padding: 1em 3em; 
+	background-color: var(--green-sheen);
+	border-top: solid 0.1em var(--sea-foam-green); 
+}
+
+#notes p, li {
+	font-size: 12pt;
+}
+.highlighted.element {
+	font-weight: 900;
+	font-size: 16pt;
+}
+
+#navbar {
+	width: 100vw;
+	background-color: var(--awesome);
+	box-shadow: 0 0 5pt var(--green-sheen);
+	color: var(--very-pale-yellow);
+	font-size: 1.44em;
+	font-weight: 900;
+	font-variant: small-caps;
+}
+
+code {
+	color: black;
+}
